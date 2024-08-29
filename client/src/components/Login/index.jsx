@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8080/api/auth";
+      const url = "https://recipefinder-52yd.onrender.com/api/auth";
       const response = await axios.post(url, data);
       const token = response.data.data; // Assuming your token is returned as 'data'
       const userEmail = data.email;
