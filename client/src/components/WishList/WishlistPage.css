@@ -4,7 +4,8 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 10rem;
   background-color: #f5f5f5;
 }
 
@@ -34,7 +35,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   position: relative;
+  max-width: 300px; /* Set a maximum width for the card */
+ /* Center the card horizontally */
 }
+
 
 .wishlist-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -42,10 +46,11 @@
 
 .wishlist-item-image {
   border-radius: 8px;
-  width: 100%;
+  width: 90%;
   height: 180px;
   object-fit: cover;
   margin-bottom: 10px;
+  margin-left: 3px;
 }
 
 .wishlist-item-details {
@@ -104,7 +109,3 @@
   display: inline-block; /* Ensure the button is visible */
 }
 
-/* Hover effect */
-.back-button:hover {
-  background-color: #0056b3; /* Darker background on hover */
-}
