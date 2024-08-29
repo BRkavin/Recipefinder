@@ -1,0 +1,139 @@
+/* General styles for the meal page */
+.meal-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.meal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meal-header h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+.meal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.meal-video {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.meal-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.meal-info {
+  margin-bottom: 20px;
+}
+
+.meal-info p {
+  font-size: 1.2rem;
+  color: #495057;
+}
+
+.meal-instructions {
+  margin-bottom: 20px;
+}
+
+.meal-instructions h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.meal-instructions p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.meal-ingredients {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.meal-ingredients h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.meal-ingredients ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-ingredients li {
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wishlist-button button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-button button:hover {
+  background-color: #0056b3;
+}
+
+/* Positioning and styling for the back button */
+.position-relative {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  border: 1px solid #007bff; /* Button border */
+  padding: 0.5rem 1rem; /* Button padding */
+  font-size: 1rem; /* Font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  display: block; /* Ensure the button is always visible */
+}
+
+/* Hover effect */
+.back-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: white; /* Ensure text remains white on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Optional: Focus state for accessibility */
+.back-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Add a subtle focus shadow */
+}

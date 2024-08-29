@@ -1,0 +1,91 @@
+/* Make sure the back button is always visible */
+.position-relative {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: -2rem;
+  right: -20rem;
+  z-index: 1000;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  border: 1px solid #007bff; /* Button border */
+  padding: 0.5rem 1rem; /* Button padding */
+  font-size: 1rem; /* Font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  display: block; /* Ensure the button is always visible */
+}
+
+/* Hover effect */
+.back-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: white; /* Ensure text remains white on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Optional: Focus state for accessibility */
+.back-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Add a subtle focus shadow */
+}
+
+.meal-card {
+  background-color: #f8f9fa; /* Light background for the card */
+  border: 1px solid #dee2e6; /* Border color */
+  transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.meal-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.search-bar {
+  max-width: 600px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* Fixed height for image */
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.text-warning {
+  color: #ffb400; /* Stylish yellow color for the heading */
+}
+
+.text-muted {
+  color: #6c757d; /* Muted text color */
+}
+
+.text-danger {
+  color: #dc3545; /* Red color for "No meals found" message */
+}
+/* Ensure the row covers the full width */
+.row {
+  margin: 0; /* Remove default margins */
+}
+
+/* Adjust column padding and ensure full-width use */
+.col-lg-4, .col-md-6 {
+  padding: 0.5rem; /* Add space between columns */
+}
+
+/* Ensure the card takes up the full column width */
+.card {
+  width: 100%; /* Full width of the column */
+}
+
+/* Add gap between cards */
+.g-4 {
+  gap: 6rem; /* Add gap between grid items */
+}
