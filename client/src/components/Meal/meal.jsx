@@ -79,7 +79,7 @@ const Meal = () => {
         body: JSON.stringify(mealDetails),
       };
   
-      const response = await fetch('http://localhost:8080/api/recipes/add', requestOptions);
+      const response = await fetch('https://recipefinder-52yd.onrender.com/api/recipes/add', requestOptions);
       if (!response.ok) {
         throw new Error('Failed to add to wishlist.');
       }
@@ -117,7 +117,7 @@ const Meal = () => {
         headers: myHeaders,
       };
 
-      const response = await fetch(`http://localhost:8080/api/recipes/remove/${meal.idMeal}`, requestOptions);
+      const response = await fetch(`https://recipefinder-52yd.onrender.com/api/recipes/remove/${meal.idMeal}`, requestOptions);
       if (!response.ok) {
         throw new Error(`Failed to remove from wishlist. Server responded with status: ${response.status}`);
       }
