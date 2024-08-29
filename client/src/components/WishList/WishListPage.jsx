@@ -14,7 +14,7 @@ const WishlistPage = () => {
     const fetchWishlist = async () => {
       try {
         const token = localStorage.getItem('token'); // Assuming you have a JWT token for authentication
-        const response = await fetch(`http://localhost:8080/api/recipes/user/${userEmail}`, {
+        const response = await fetch(`https://recipefinder-52yd.onrender.com/api/recipes/user/${userEmail}`, {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ const WishlistPage = () => {
       console.log('Token:', token);
       console.log('User Email:', userEmail);
       
-      const response = await fetch(`http://localhost:8080/api/recipes/remove/${mealid}?userEmail=${userEmail}`, {
+      const response = await fetch(`https://recipefinder-52yd.onrender.com/api/recipes/remove/${mealid}?userEmail=${userEmail}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
