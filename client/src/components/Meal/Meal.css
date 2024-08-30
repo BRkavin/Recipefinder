@@ -1,139 +1,176 @@
-/* General styles for the meal page */
-.meal-section {
-  padding: 40px 20px;
-  background-color: #f8f9fa;
-}
-
-.meal-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.meal-header h2 {
-  font-size: 2.5rem;
-  color: #343a40;
-}
-
-.meal-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.meal-video {
-  margin-bottom: 20px;
-  max-width: 100%;
-}
-
-.meal-details {
-  background-color: #ffffff;
+/* General Styles */
+body {
+  font-family: 'Lora', serif;
+  background-color: #f3f4f6;
+  color: #333;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-.meal-info {
-  margin-bottom: 20px;
-}
-
-.meal-info p {
-  font-size: 1.2rem;
-  color: #495057;
-}
-
-.meal-instructions {
-  margin-bottom: 20px;
-}
-
-.meal-instructions h3 {
-  font-size: 1.5rem;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.meal-instructions p {
-  font-size: 1.1rem;
+  overflow-x: hidden;
   line-height: 1.6;
 }
 
-.meal-ingredients {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 8px;
+/* Meal Header */
+.meal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 15rem;
 }
 
-.meal-ingredients h3 {
-  font-size: 1.5rem;
-  color: #007bff;
+/* Meal Content */
+.meal-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.meal-image-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.meal-video{
+  height: 300px;
+  width: 500px;
+  position: relative;
+  left: 10rem;
   margin-bottom: 10px;
 }
+.meal-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-.meal-ingredients ul {
+/* Meal Details */
+.meal-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Ingredients */
+.meal-info {
+  width: 45%;
+}
+
+.meal-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #d4a373;
+  margin-bottom: 1rem;
+}
+
+.meal-info ul {
   list-style-type: none;
   padding: 0;
 }
 
-.meal-ingredients li {
+.meal-info li {
   font-size: 1.1rem;
-  background-color: #ffffff;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
 }
 
+.meal-info .meal-yield,
+.meal-info .meal-prep-time,
+.meal-info .meal-total-time {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Instructions */
+.meal-instructions {
+  width: 55%;
+  position: relative;
+  top: 5rem;
+}
+
+.meal-instructions h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #d4a373;
+  margin-bottom: 1rem;
+}
+
+.meal-instructions p {
+  font-size: 1.1rem;
+}
+
+/* Special Info */
+.meal-special-info {
+  margin-top: 2rem;
+}
+
+.meal-special-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #d4a373;
+  margin-bottom: 1rem;
+}
+
+.meal-special-info p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Wishlist Button */
 .wishlist-button {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .wishlist-button button {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: #ffffff;
-  background-color: #007bff;
+  background-color: #d4a373;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .wishlist-button button:hover {
-  background-color: #0056b3;
+  background-color: #b5835a;
+  transform: translateY(-3px);
 }
 
-/* Positioning and styling for the back button */
-.position-relative {
-  position: relative;
-}
-
+/* Back Button */
 .back-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1000;
-  background-color: #007bff; /* Button background color */
-  color: white; /* Text color */
-  border: 1px solid #007bff; /* Button border */
-  padding: 0.5rem 1rem; /* Button padding */
-  font-size: 1rem; /* Font size */
-  border-radius: 0.25rem; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-  display: block; /* Ensure the button is always visible */
+  font-size: 1rem;
+  color: blue;
+  background-color: #d4a373;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  top: 1rem;
+  left: 73rem;
+  position: relative; /* Ensure it is positioned above other elements */
+  z-index: 1000; /* High z-index to make it visible */
+ 
 }
 
-/* Hover effect */
 .back-button:hover {
-  background-color: #0056b3; /* Darker background on hover */
-  color: white; /* Ensure text remains white on hover */
-  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #b5835a;
 }
 
-/* Optional: Focus state for accessibility */
-.back-button:focus {
-  outline: none; /* Remove default focus outline */
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Add a subtle focus shadow */
+/* Media Queries */
+@media (max-width: 768px) {
+  .meal-details {
+    flex-direction: column;
+  }
+
+  .meal-info, .meal-instructions {
+    width: 100%;
+  }
 }
