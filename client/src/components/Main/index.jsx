@@ -128,7 +128,7 @@ const Main = () => {
     const userEmail = localStorage.getItem("userEmail");
     if (userEmail) {
       try {
-        const { data } = await axios.get(`http://localhost:8080/api/users/${userEmail}`);
+        const { data } = await axios.get(`https://recipefinder-52yd.onrender.com/api/users/${userEmail}`);
         setUserDetails(data);
       } catch (error) {
         console.error("Error fetching user details:", error);
@@ -173,7 +173,7 @@ const Main = () => {
 
   const handleSaveProfile = async () => {
     try {
-      const url = `http://localhost:8080/api/users/${userDetails.email}`;
+      const url = `https://recipefinder-52yd.onrender.com/api/users/${userDetails.email}`;
       await axios.put(url, userDetails);
       setShowProfileModal(false);
     } catch (error) {
