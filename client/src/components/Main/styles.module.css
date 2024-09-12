@@ -1,5 +1,3 @@
-
-
 body {
 	margin: 0;
 	padding: 0;
@@ -104,4 +102,77 @@ body {
 	background-color: #f2f2f2;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+.white_btn {
+	border: none;
+	outline: none;
+	padding: 8px 16px;
+	background-color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff; /* Change text color to white */
+	position: relative;
+	left: 0; /* Reset the left positioning */
+	background-color: transparent; /* Make the button background transparent */
+  }
+  .modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	z-index: 9999;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal_content {
+	padding: 20px;
+  }
+  .navbar {
+    background-color: #3bb19b; /* Keep the background color */
+    padding: 10px 20px; /* Add padding for a balanced look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    margin-left: 15px; /* Add some spacing between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1f1f1; /* Slight color change on hover */
+}
+
+.navbar .btn {
+    background-color: white;
+    color: #3bb19b;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: none;
+}
+
+.navbar .btn:hover {
+    background-color: #e8f5f3; /* Slight color change on hover */
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1; /* Subtle hover effect for dropdown items */
 }
