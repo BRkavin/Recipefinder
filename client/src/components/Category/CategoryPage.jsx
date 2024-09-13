@@ -73,7 +73,9 @@ const CategoryPage = () => {
           <i className="bi bi-arrow-left"></i> Back
         </button>
       </div>
-      <p className="text-center mb-5 text-muted">{categoryDescription}</p>
+      <p className="text-center mb-5 text-white">
+  {categoryDescription}
+</p>
       <div className="mb-4 text-center">
         <input
           type="text"
